@@ -47,7 +47,8 @@
   },
   "video": {
     "heading": "Watch it in 30 seconds",
-    "play": "Play the video",
+    "lead": "From the satellite to the map, explained in half a minute.",
+    "play": "Watch video · 0:30",
     "iframe_title": "Zafra Radar in 30 seconds"
   },
   "results": {
@@ -73,14 +74,14 @@
   },
   "about": {
     "heading": "Who's behind it",
-    "p1": "I'm Juan Toledo, a software developer with more than 9 years of experience, from Morelos, Mexico, and a graduate of Instituto Tecnológico de Zacatepec.",
-    "p2": "I built Zafra Radar on my own, end to end: the satellite data analysis, the web app and its deployment. I built the web app in one weekend, working with AI coding agents while setting the direction and reviewing every step, during the NASA Space Apps Challenge 2026 at my old school, where 877 people took part in 170 teams.",
-    "p3": "That is what I do: take an idea or a problem and turn it into a product that works. If you have a project in mind, let's talk.",
+    "p1": "I'm Juan Alberto Toledo Tello, a software developer with more than 9 years of experience, from Morelos, Mexico, and a graduate of Instituto Tecnológico de Zacatepec.",
+    "p2": "I took part in Zafra Radar as a team of one, so I got to do a bit of everything: the satellite data analysis, the web app and its deployment. I built the web app in one weekend, with the help of AI coding agents and reviewing every step, during the NASA Space Apps Challenge 2026 at my old school, where 877 people took part in 170 teams.",
+    "p3": "I enjoy taking an idea or a problem and turning it into something that works. If you have a project in mind, I'd be glad to talk.",
     "phrase1": "From idea to working product",
     "phrase2": "Data and maps",
     "phrase3": "Full web applications",
-    "portrait_alt": "Juan Toledo next to a sugarcane field in Morelos.",
-    "presenting_alt": "Juan Toledo presenting Zafra Radar in front of the big screen at the Zacatepec local event.",
+    "portrait_alt": "Juan Alberto Toledo Tello next to a sugarcane field in Morelos.",
+    "presenting_alt": "Juan Alberto Toledo Tello presenting Zafra Radar in front of the big screen at the Zacatepec local event.",
     "audience_alt": "The Zacatepec venue's auditorium full of participants.",
     "caption": "Presenting at the Zacatepec local event, November 15, 2026."
   },
@@ -104,5 +105,5 @@
   },
   "contact_message": "Hi Juan, I saw Zafra Radar and I'd like to talk.",
   "share_text": "Look at this: a map built in Morelos, Mexico, that uses a NASA satellite to tell which day each sugarcane field was harvested 🛰️🌱",
-  "footer": "Made by Juan Toledo. Independent project: not a NASA product and not endorsed by NASA. Radar data: NISAR mission (NASA and ISRO)."
+  "footer": "Made by Juan Alberto Toledo Tello. Independent project: not a NASA product and not endorsed by NASA. Radar data: NISAR mission (NASA and ISRO)."
 }

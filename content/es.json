@@ -47,7 +47,8 @@
   },
   "video": {
     "heading": "Míralo en 30 segundos",
-    "play": "Reproducir el video",
+    "lead": "Del satélite al mapa, explicado en medio minuto.",
+    "play": "Ver video · 0:30",
     "iframe_title": "Zafra Radar en 30 segundos"
   },
   "results": {
@@ -73,14 +74,14 @@
   },
   "about": {
     "heading": "Quién está detrás",
-    "p1": "Soy Juan Toledo, desarrollador de software con más de 9 años de experiencia, de Morelos y egresado del Instituto Tecnológico de Zacatepec.",
-    "p2": "Zafra Radar lo hice yo solo, de principio a fin: el análisis de los datos del satélite, la aplicación web y su puesta en línea. La aplicación la construí en un fin de semana, trabajando con agentes de IA y dirigiendo y revisando cada paso, durante el NASA Space Apps Challenge 2026 en la sede de mi escuela, donde participaron 877 personas en 170 equipos.",
-    "p3": "Eso es lo que hago: tomar una idea o un problema y convertirlo en un producto que funciona. Si tienes un proyecto en mente, platiquemos.",
+    "p1": "Soy Juan Alberto Toledo Tello, desarrollador de software con más de 9 años de experiencia, de Morelos y egresado del Instituto Tecnológico de Zacatepec.",
+    "p2": "En Zafra Radar participé como equipo de una sola persona, así que me tocó hacer de todo: el análisis de los datos del satélite, la aplicación web y su puesta en línea. La aplicación la construí en un fin de semana, apoyándome en agentes de IA y revisando cada paso, durante el NASA Space Apps Challenge 2026 en la sede de mi escuela, donde participaron 877 personas en 170 equipos.",
+    "p3": "Me gusta tomar una idea o un problema y convertirlo en algo que funcione. Si tienes un proyecto en mente, con gusto platicamos.",
     "phrase1": "De la idea al producto funcionando",
     "phrase2": "Datos y mapas",
     "phrase3": "Aplicaciones web completas",
-    "portrait_alt": "Juan Toledo junto a un cañaveral en Morelos.",
-    "presenting_alt": "Juan Toledo presenta Zafra Radar frente a la pantalla grande en la sede Zacatepec.",
+    "portrait_alt": "Juan Alberto Toledo Tello junto a un cañaveral en Morelos.",
+    "presenting_alt": "Juan Alberto Toledo Tello presenta Zafra Radar frente a la pantalla grande en la sede Zacatepec.",
     "audience_alt": "El auditorio de la sede Zacatepec lleno de participantes.",
     "caption": "Presentación en la sede Zacatepec, 15 de noviembre de 2026."
   },
@@ -104,5 +105,5 @@
   },
   "contact_message": "Hola Juan, vi Zafra Radar y me gustaría platicar.",
   "share_text": "Mira esto: un mapa hecho en Morelos que usa un satélite de la NASA para saber qué día se cortó cada parcela de caña 🛰️🌱",
-  "footer": "Hecho por Juan Toledo. Proyecto independiente: no es un producto de la NASA ni cuenta con su respaldo. Datos de radar: misión NISAR (NASA e ISRO)."
+  "footer": "Hecho por Juan Alberto Toledo Tello. Proyecto independiente: no es un producto de la NASA ni cuenta con su respaldo. Datos de radar: misión NISAR (NASA e ISRO)."
 }

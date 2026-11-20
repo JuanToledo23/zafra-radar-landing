@@ -210,11 +210,15 @@
       <div class="wrap">
         <div class="video-block">
           <h2 id="video-title">{{video.heading}}</h2>
+          <p class="video-lead">{{video.lead}}</p>
           <div class="video" id="video">
-            <button type="button" class="video-poster" id="video-play" data-umami-event="landing-play-video" aria-label="{{video.play}}">
-              <img src="{{a}}assets/hero-poster.jpg" alt="" width="960" height="794" loading="lazy" decoding="async">
-              <span class="play" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            <button type="button" class="video-poster" id="video-play" data-umami-event="landing-play-video">
+              <img src="{{a}}assets/video-poster.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+              <span class="play-control">
+                <span class="play" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+                </span>
+                <span class="play-label">{{video.play}}</span>
               </span>
             </button>
           </div>

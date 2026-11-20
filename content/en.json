@@ -10,7 +10,8 @@
   "plaque": {
     "label": "Winning project",
     "title": "Impacto Morelos Distinction",
-    "sub": "NASA Space Apps Challenge 2026 · Zacatepec, Mexico"
+    "sub": "NASA Space Apps Challenge 2026 · Zacatepec, Mexico",
+    "link_hint": "See the award post (opens in a new tab)"
   },
   "h1": "A NASA satellite tells us the day each sugarcane field was harvested.",
   "subtitle": "Built in Morelos, Mexico. Also tested in Brazil.",

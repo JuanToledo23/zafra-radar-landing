@@ -50,7 +50,8 @@ def context(lang, site, content):
     award = site.get("award_url", "")
     if award:
         plaque_open = f'<a class="plaque" href="{html.escape(award, quote=True)}" target="_blank" rel="noopener">'
-        plaque_close = "</a>"
+        plaque_close = ('<svg class="plaque-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>'
+                        f'<span class="sr-only">{html.escape(content["plaque"]["link_hint"])}</span></a>')
     else:
         plaque_open, plaque_close = '<div class="plaque">', "</div>"
     # Language switch: the current language is plain text, the other one a link.

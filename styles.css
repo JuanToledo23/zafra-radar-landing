@@ -89,14 +89,30 @@ h1, h2, h3, .step-num, .stat-num, .map-title, .brand { font-family: var(--displa
   display: inline-flex; align-items: center; gap: 12px; margin-bottom: 18px; padding: 10px 14px 10px 12px;
   background: var(--amber); color: var(--amber-ink); border-radius: var(--radius); text-decoration: none; line-height: 1.25;
 }
-.plaque-icon { width: 30px; height: 30px; flex: none; color: var(--amber-ink); }
-.plaque-text { display: grid; gap: 1px; }
-.plaque-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
-.plaque-title { font-family: var(--display); font-weight: 700; font-size: 1.05rem; }
-.plaque-sub { font-size: 0.78rem; font-weight: 600; }
+.plaque { position: relative; overflow: hidden; isolation: isolate; }
+.plaque-icon { width: 34px; height: 43px; flex: none; color: var(--amber-ink); }
+.plaque-text { display: grid; gap: 2px; }
+.plaque-label { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+.plaque-title { font-family: var(--display); font-weight: 700; font-size: 1rem; line-height: 1.15; letter-spacing: -0.01em; white-space: nowrap; }
+.plaque-sub { font-size: 0.76rem; font-weight: 400; }
 .plaque-sub span:not(.sep) { display: block; }
 .plaque-sub .sep { display: none; }
-a.plaque:hover .plaque-title { text-decoration: underline; text-underline-offset: 3px; }
+.plaque-arrow { width: 16px; height: 16px; flex: none; margin-left: 0; color: var(--amber-ink); transition: transform 150ms ease; }
+a.plaque:hover .plaque-title, a.plaque:focus-visible .plaque-title { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+a.plaque:hover .plaque-arrow, a.plaque:focus-visible .plaque-arrow { transform: translate(2px, -2px); }
+/* A soft band of light sweeps across once after load, and again on hover or keyboard focus.
+   Keeping the first animation in the hover list stops it from replaying when the hover ends. */
+.plaque::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(105deg, transparent 30%, rgba(255, 255, 255, 0.38) 50%, transparent 70%);
+  transform: translateX(-110%);
+  animation: plaque-shine 1.2s ease-in-out 600ms 1 both;
+}
+.plaque:hover::after, .plaque:focus-visible::after {
+  animation: plaque-shine 1.2s ease-in-out 600ms 1 both, plaque-shine-again 1.2s ease-in-out 0s 1 both;
+}
+@keyframes plaque-shine { from { transform: translateX(-110%); } to { transform: translateX(110%); } }
+@keyframes plaque-shine-again { from { transform: translateX(-110%); } to { transform: translateX(110%); } }
 .hero :focus-visible { outline-color: var(--text); }
 .hero h1 { font-size: 2rem; line-height: 1.1; letter-spacing: -0.02em; }
 .lead { margin: 12px 0 20px; font-size: 1.06rem; color: var(--text-2); }
@@ -275,6 +291,10 @@ a.plaque:hover .plaque-title { text-decoration: underline; text-underline-offset
   :root { --gutter: 28px; }
   .hero h1 { font-size: 2.6rem; }
   .plaque-sub span:not(.sep) { display: inline; }
+  .plaque { gap: 14px; padding: 10px 16px 10px 14px; }
+  .plaque-icon { width: 40px; height: 50px; }
+  .plaque-title { font-size: 1.15rem; }
+  .plaque-arrow { width: 18px; height: 18px; margin-left: 4px; }
   .plaque-sub .sep { display: inline; }
   .stats { grid-template-columns: repeat(3, 1fr); gap: 28px; border-top: 0; }
   .stats > div { grid-template-columns: 1fr; gap: 8px; align-content: start; border-top: 1px solid var(--rule); border-bottom: 0; padding-top: 14px; }
@@ -304,4 +324,5 @@ a.plaque:hover .plaque-title { text-decoration: underline; text-underline-offset
 }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+  .plaque::after { animation: none !important; display: none; }
 }

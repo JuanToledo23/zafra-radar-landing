@@ -83,7 +83,6 @@ def context(lang, site, content):
         "share_facebook": "https://www.facebook.com/sharer/sharer.php?u=" + enc(share_url),
         "share_x": "https://x.com/intent/tweet?text=" + enc(text) + "&url=" + enc(share_url),
         "share_linkedin": "https://www.linkedin.com/sharing/share-offsite/?url=" + enc(share_url),
-        "share_telegram": "https://t.me/share/url?url=" + enc(share_url) + "&text=" + enc(text),
         "contact_url": f"https://wa.me/{site['whatsapp_number']}?text=" + enc(content["contact_message"]),
         "plaque_open": plaque_open,
         "plaque_close": plaque_close,

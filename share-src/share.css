@@ -1,0 +1,14 @@
+/* Shared styles for the preview and share images (same dark theme as the page).
+   build.py fills the *.tmpl.html files into build/; render.sh screenshots them. */
+@font-face { font-family: "DM Sans"; src: url("../assets/fonts/dm-sans-700.woff2") format("woff2"); font-weight: 700; }
+html, body { margin: 0; overflow: hidden; background: #141619; color: #f3f4f6; }
+body { position: relative; font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; }
+.map { position: absolute; inset: 0; background: #0d0f11 url("map-frame.jpg") center / cover no-repeat; }
+.panel { position: absolute; background: #141619; }
+.plaque { position: absolute; display: flex; align-items: center; background: #ffb000; color: #141619; border-radius: 10px; line-height: 1.2; }
+.plaque svg { flex: none; }
+.plaque .l { display: block; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.plaque .t { display: block; font-family: "DM Sans", system-ui, sans-serif; font-weight: 700; }
+.plaque .s { display: block; font-weight: 600; }
+h1 { position: absolute; margin: 0; font-family: "DM Sans", system-ui, sans-serif; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em; color: #fff; }
+.url { position: absolute; font-family: "DM Sans", system-ui, sans-serif; font-weight: 700; color: #ffb000; letter-spacing: -0.01em; }

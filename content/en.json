@@ -1,0 +1,108 @@
+{
+  "lang": "en",
+  "locale": "en_US",
+  "map_url": "https://zafraradar.earth/?utm_source=landing&utm_medium=referral",
+  "title": "Zafra Radar · The day each sugarcane field was harvested",
+  "description": "A map built in Morelos, Mexico, that uses a NASA radar satellite to tell which day each sugarcane field was harvested. Also tested in Brazil.",
+  "og_alt": "Winning project. A NASA satellite tells us the day each sugarcane field was harvested. hola.zafraradar.earth",
+  "address": "hola.zafraradar.earth",
+  "lang_nav": "Language",
+  "plaque": {
+    "label": "Winning project",
+    "title": "Impacto Morelos Distinction",
+    "sub": "NASA Space Apps Challenge 2026 · Zacatepec, Mexico"
+  },
+  "h1": "A NASA satellite tells us the day each sugarcane field was harvested.",
+  "subtitle": "Built in Morelos, Mexico. Also tested in Brazil.",
+  "cta": "Open the map",
+  "hero_video": {
+    "title": "How the harvest moved",
+    "aria": "The 2025-26 harvest in Morelos advancing week by week on the map",
+    "pause": "Pause the animation",
+    "resume": "Resume the animation",
+    "start": "Dec 2025",
+    "end": "May 2026",
+    "standing": "Standing cane",
+    "harvested": "Harvested",
+    "undated": "No date"
+  },
+  "how": {
+    "heading": "How it works",
+    "s1_title": "Radar sees through clouds and smoke.",
+    "s1_text": "The NISAR satellite, from NASA and India's space agency, passes over the cane fields every 12 days. It works day and night, even under cloudy skies.",
+    "s1_aria": "Drawing: the satellite sends its signal through clouds and smoke down to the cane field, day and night, every 12 days.",
+    "s1_day": "day",
+    "s1_night": "night",
+    "s1_every": "every 12 days",
+    "s2_title": "When cane is cut, the signal changes.",
+    "s2_text": "A field with tall cane returns a different signal than a freshly cut one. The system detects that change.",
+    "s2_aria": "Drawing: the same field before, with tall cane, and after, already cut.",
+    "s2_before": "Before",
+    "s2_after": "After",
+    "s3_title": "The map marks the date for each field.",
+    "s3_text": "Every field shows the approximate day it was harvested, and you can watch the season move week by week.",
+    "s3_aria": "Drawing: fields seen from above, each with its harvest date, such as Feb 12 and Mar 3.",
+    "s3_tag1": "Feb 12",
+    "s3_tag2": "Mar 3"
+  },
+  "video": {
+    "heading": "Watch it in 30 seconds",
+    "play": "Play the video",
+    "iframe_title": "Zafra Radar in 30 seconds"
+  },
+  "results": {
+    "heading": "Results",
+    "fields": "sugarcane fields found",
+    "hectares": "hectares mapped, nearly the same area the mill reports",
+    "error": "days of typical error in the harvest date",
+    "context": "2025-26 season, Emiliano Zapata mill area, Morelos.",
+    "mid_title": "Season midpoint",
+    "mid_radar": "Radar: February 7",
+    "mid_report": "Official report: February 14",
+    "brazil": "days of typical error in Brazil, with the same code."
+  },
+  "who": {
+    "heading": "Who is it for?",
+    "mills_title": "Sugar mills",
+    "mills_text": "See how the harvest advances, week by week.",
+    "mills_aria": "Drawing: a sugar mill and bars that grow week by week.",
+    "growers_title": "Growers and municipalities",
+    "growers_text": "Check on a public map which day each field was harvested.",
+    "growers_aria": "Drawing: a phone showing a map of fields and a location pin.",
+    "aside": "And it is low-cost: it uses free NASA imagery."
+  },
+  "about": {
+    "heading": "Who's behind it",
+    "p1": "I'm Juan Toledo, a software developer with more than 9 years of experience, from Morelos, Mexico, and a graduate of Instituto Tecnológico de Zacatepec.",
+    "p2": "I built Zafra Radar on my own, end to end: the satellite data analysis, the web app and its deployment. I built the web app in one weekend, working with AI coding agents while setting the direction and reviewing every step, during the NASA Space Apps Challenge 2026 at my old school, where 877 people took part in 170 teams.",
+    "p3": "That is what I do: take an idea or a problem and turn it into a product that works. If you have a project in mind, let's talk.",
+    "phrase1": "From idea to working product",
+    "phrase2": "Data and maps",
+    "phrase3": "Full web applications",
+    "portrait_alt": "Juan Toledo next to a sugarcane field in Morelos.",
+    "presenting_alt": "Juan Toledo presenting Zafra Radar in front of the big screen at the Zacatepec local event.",
+    "audience_alt": "The Zacatepec venue's auditorium full of participants.",
+    "caption": "Presenting at the Zacatepec local event, November 15, 2026."
+  },
+  "resources": {
+    "heading": "Resources",
+    "map": "Morelos map",
+    "video": "30-second video",
+    "deck": "Slide deck",
+    "repo": "Project repository"
+  },
+  "closing": {
+    "heading": "Liked it? Help me share it",
+    "whatsapp": "Share on WhatsApp",
+    "native": "Share",
+    "copy": "Copy link",
+    "copied": "Copied!",
+    "copied_status": "Link copied.",
+    "copy_failed": "Couldn't copy the link.",
+    "contact_line": "Want to bring Zafra Radar to your region, or have another tech project in mind? Let's talk.",
+    "contact_button": "Message me on WhatsApp"
+  },
+  "contact_message": "Hi Juan, I saw Zafra Radar and I'd like to talk.",
+  "share_text": "Look at this: a map built in Morelos, Mexico, that uses a NASA satellite to tell which day each sugarcane field was harvested 🛰️🌱",
+  "footer": "Made by Juan Toledo. Independent project: not a NASA product and not endorsed by NASA. Radar data: NISAR mission (NASA and ISRO)."
+}

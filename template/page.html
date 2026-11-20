@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{&lang_redirect}}
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#141619">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="{{page_url}}">
+  <link rel="alternate" hreflang="en" href="{{url_en}}">
+  <link rel="alternate" hreflang="es" href="{{url_es}}">
+  <link rel="alternate" hreflang="x-default" href="{{url_en}}">
+  <link rel="icon" type="image/svg+xml" href="{{a}}assets/favicon.svg">
+  <link rel="apple-touch-icon" href="{{a}}assets/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{locale}}">
+  <meta property="og:locale:alternate" content="{{other_locale}}">
+  <meta property="og:site_name" content="Zafra Radar">
+  <meta property="og:url" content="{{page_url}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{og_alt}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="{{og_image}}">
+  <meta name="twitter:image:alt" content="{{og_alt}}">
+
+  <link rel="preload" href="{{a}}assets/fonts/dm-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{a}}styles.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="{{umami_website_id}}" data-domains="{{umami_domains}}" data-do-not-track="true"></script>
+  <script defer src="{{a}}main.js"></script>
+</head>
+<body data-share-url="{{share_url}}" data-share-text="{{share_text}}" data-copy="{{closing.copy}}" data-copied="{{closing.copied}}" data-copied-status="{{closing.copied_status}}" data-copy-failed="{{closing.copy_failed}}" data-pause="{{hero_video.pause}}" data-resume="{{hero_video.resume}}" data-video-src="{{a}}assets/hero.mp4" data-embed="https://www.youtube-nocookie.com/embed/{{video_id}}" data-embed-title="{{video.iframe_title}}">
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 2.6a9.3 9.3 0 0 0-8 14.1L2.7 21.4l4.8-1.3A9.3 9.3 0 1 0 12 2.6z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M8.6 7.4c.3-.3.8-.3 1 0l1.1 1.7c.2.3.2.7-.1 1l-.6.6c.6 1.2 1.6 2.2 2.8 2.8l.6-.6c.3-.3.7-.3 1-.1l1.7 1.1c.3.2.4.7.1 1l-.7.8c-.5.5-1.2.7-1.9.5-2.7-.9-4.9-3.1-5.8-5.8-.2-.7 0-1.4.5-1.9z" fill="currentColor"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M13.6 21.5v-7.8h2.6l.4-3.1h-3V8.7c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.3H7.9v3.1h2.6v7.8z" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M3.5 3.5h5.2l11.8 17h-5.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 3.5l-6.6 7.5M4 20.5l6.6-7.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4.5 9.2h3.2v10.3H4.5zM6.1 4a1.85 1.85 0 1 1 0 3.7 1.85 1.85 0 0 1 0-3.7zM9.8 9.2h3.1v1.4c.5-.9 1.6-1.7 3.3-1.7 3.3 0 3.9 2.2 3.9 5v5.6h-3.2v-5c0-1.2 0-2.7-1.7-2.7s-2 1.3-2 2.6v5.1H9.8z" fill="currentColor"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21.2 4.1L2.9 11.2c-.7.3-.7 1.3 0 1.5l4.4 1.4 1.7 5.4c.2.6 1 .8 1.4.3l2.5-2.4 4.6 3.4c.5.4 1.3.1 1.4-.5l3.2-14.9c.2-.8-.5-1.5-1.3-1.2zM9.8 14.3l-.4 3.4-1.2-3.9 9.3-6.1z" fill="currentColor"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13.5a4.5 4.5 0 0 0 6.8.5l2.8-2.8a4.5 4.5 0 0 0-6.4-6.4l-1.6 1.6M14 10.5a4.5 4.5 0 0 0-6.8-.5l-2.8 2.8a4.5 4.5 0 0 0 6.4 6.4l1.6-1.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V3.5M7.5 8L12 3.5 16.5 8M5 12.5v6.5a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5v-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24"><path d="M6.5 1.5h4l2.6 6.2h-4zM17.5 1.5h-4l-2.6 6.2h4z" fill="currentColor"/><circle cx="12" cy="15" r="7" fill="currentColor"/><circle cx="12" cy="15" r="4" fill="none" stroke="#ffb000" stroke-width="1.6"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="{{home_href}}"><img src="{{a}}assets/favicon.svg" alt="" width="24" height="24">Zafra Radar</a>
+      <nav class="lang" aria-label="{{lang_nav}}">
+        {{&lang_switch}}
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          {{&plaque_open}}
+            <svg class="plaque-icon" aria-hidden="true"><use href="#i-medal"/></svg>
+            <span class="plaque-text">
+              <span class="plaque-label">{{plaque.label}}</span>
+              <span class="plaque-title">{{plaque.title}}</span>
+              <span class="plaque-sub">{{&plaque_sub}}</span>
+            </span>
+          {{&plaque_close}}
+          <h1 id="hero-title">{{h1}}</h1>
+          <p class="lead">{{subtitle}}</p>
+          <a class="btn btn-primary" href="{{map_url}}" target="_blank" rel="noopener" data-umami-event="landing-open-map">{{cta}}</a>
+        </div>
+        <figure class="hero-map" aria-labelledby="map-title">
+          <p class="map-title" id="map-title">{{hero_video.title}}</p>
+          <div class="hero-media">
+            <video id="hero-video" autoplay muted loop playsinline poster="{{a}}assets/hero-poster.jpg" width="960" height="794" aria-label="{{hero_video.aria}}"></video>
+          </div>
+          <div class="timeline" id="hero-timeline" hidden>
+            <button type="button" class="media-toggle" id="hero-toggle" aria-label="{{hero_video.pause}}">
+              <svg class="icon-pause" viewBox="0 0 20 20" width="12" height="12" aria-hidden="true"><path d="M5 3h3.5v14H5zM11.5 3H15v14h-3.5z" fill="currentColor"/></svg>
+              <svg class="icon-play" viewBox="0 0 20 20" width="12" height="12" aria-hidden="true"><path d="M5 3l12 7-12 7z" fill="currentColor"/></svg>
+            </button>
+            <span class="tl-label">{{hero_video.start}}</span>
+            <span class="tl-track" aria-hidden="true"><span class="tl-fill" id="hero-progress"></span></span>
+            <span class="tl-label">{{hero_video.end}}</span>
+          </div>
+          <figcaption class="legend">
+            <span class="key"><i class="sw sw-green"></i>{{hero_video.standing}}</span>
+            <span class="key"><i class="sw sw-amber"></i>{{hero_video.harvested}}</span>
+            <span class="key"><i class="sw sw-grey"></i>{{hero_video.undated}}</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. How it works -->
+    <section class="section tone-2" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title">{{how.heading}}</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <svg class="step-art" viewBox="0 0 300 210" role="img" aria-label="{{how.s1_aria}}" focusable="false">
+              <defs>
+                <mask id="moon-cut"><rect width="300" height="210" fill="#fff"/><circle cx="281" cy="29" r="12" fill="#000"/></mask>
+              </defs>
+              <g stroke="#ffb000" stroke-width="2.5" stroke-linecap="round">
+                <path d="M30 14v-6M30 54v6M10 34H4M50 34h6M16 20l-4-4M44 48l4 4M44 20l4-4M16 48l-4 4"/>
+              </g>
+              <circle cx="30" cy="34" r="12" fill="#ffb000"/>
+              <text x="30" y="82" class="svg-label" text-anchor="middle">{{how.s1_day}}</text>
+              <circle cx="274" cy="34" r="14" fill="#d9dde3" mask="url(#moon-cut)"/>
+              <text x="274" y="82" class="svg-label" text-anchor="middle">{{how.s1_night}}</text>
+              <path d="M150 40 L102 186 H198 Z" fill="#ffffff" fill-opacity="0.07"/>
+              <path d="M150 42V184" stroke="#c4c9d0" stroke-width="2" stroke-dasharray="5 6"/>
+              <g transform="translate(150 26) rotate(-14)">
+                <rect x="-36" y="-6" width="24" height="12" rx="1.5" fill="#7d8794"/>
+                <rect x="12" y="-6" width="24" height="12" rx="1.5" fill="#7d8794"/>
+                <path d="M-36 0h24M12 0h24" stroke="#141619" stroke-width="1"/>
+                <rect x="-10" y="-10" width="20" height="20" rx="3" fill="#e6e9ed"/>
+                <path d="M-4 10l4 6 4-6" fill="#e6e9ed"/>
+              </g>
+              <rect x="150" y="46" width="108" height="26" rx="13" fill="#1b1e22" stroke="#5cc27e" stroke-width="1.5"/>
+              <text x="204" y="64" class="svg-label svg-accent" text-anchor="middle">{{how.s1_every}}</text>
+              <path d="M92 108a13 13 0 0 1 12-16a17 17 0 0 1 32 3a12 12 0 0 1 3 23H100a10 10 0 0 1-8-10z" fill="#2b3036" stroke="#9ba2ac" stroke-width="2"/>
+              <path d="M148 98a10 10 0 0 1 10-12a14 14 0 0 1 26 2a10 10 0 0 1 1 19h-29a9 9 0 0 1-8-9z" fill="#2b3036" stroke="#9ba2ac" stroke-width="2"/>
+              <g fill="none" stroke="#7d8794" stroke-width="3" stroke-linecap="round">
+                <path d="M196 156c-8-6 6-10-2-16s6-10-2-16"/>
+                <path d="M208 160c-8-6 6-10-2-16s6-10-2-16s6-8 0-12"/>
+              </g>
+              <g stroke="#3fa45f" stroke-width="3" stroke-linecap="round">
+                <path d="M84 192v-26M98 192v-32M112 192v-24M126 192v-30M140 192v-26M154 192v-32M168 192v-24M182 192v-30M196 192v-26M210 192v-30"/>
+              </g>
+              <g fill="#5cc27e">
+                <path d="M84 170c-7-1-10-5-11-10c6 1 10 4 11 10z"/><path d="M98 164c7-1 10-5 11-10c-6 1-10 4-11 10z"/>
+                <path d="M126 164c-7-1-10-5-11-10c6 1 10 4 11 10z"/><path d="M154 164c7-1 10-5 11-10c-6 1-10 4-11 10z"/>
+                <path d="M182 164c-7-1-10-5-11-10c6 1 10 4 11 10z"/><path d="M210 164c7-1 10-5 11-10c-6 1-10 4-11 10z"/>
+              </g>
+              <path d="M70 194H226" stroke="#8a6d45" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <h3>{{how.s1_title}}</h3>
+            <p>{{how.s1_text}}</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <svg class="step-art" viewBox="0 0 300 210" role="img" aria-label="{{how.s2_aria}}" focusable="false">
+              <text x="72" y="24" class="svg-title" text-anchor="middle">{{how.s2_before}}</text>
+              <text x="228" y="24" class="svg-title" text-anchor="middle">{{how.s2_after}}</text>
+              <g stroke="#3fa45f" stroke-width="3.5" stroke-linecap="round">
+                <path d="M24 190V70M40 190V56M56 190V74M72 190V60M88 190V72M104 190V58M120 190V70"/>
+              </g>
+              <g fill="#5cc27e">
+                <path d="M24 80c-9-2-13-8-14-15c8 2 13 7 14 15z"/><path d="M40 66c9-2 13-8 14-15c-8 2-13 7-14 15z"/>
+                <path d="M56 84c-9-2-13-8-14-15c8 2 13 7 14 15z"/><path d="M72 70c9-2 13-8 14-15c-8 2-13 7-14 15z"/>
+                <path d="M88 82c-9-2-13-8-14-15c8 2 13 7 14 15z"/><path d="M104 68c9-2 13-8 14-15c-8 2-13 7-14 15z"/>
+                <path d="M120 80c-9-2-13-8-14-15c8 2 13 7 14 15z"/>
+                <path d="M40 120c-9-2-13-8-14-15c8 2 13 7 14 15z"/><path d="M88 116c9-2 13-8 14-15c-8 2-13 7-14 15z"/>
+              </g>
+              <path d="M12 194H132" stroke="#8a6d45" stroke-width="5" stroke-linecap="round"/>
+              <path d="M140 132h20m-7-7l7 7-7 7" fill="none" stroke="#c4c9d0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <g stroke="#e0a32a" stroke-width="3.5" stroke-linecap="round">
+                <path d="M180 190v-10M196 190v-8M212 190v-11M228 190v-9M244 190v-10M260 190v-8M276 190v-11"/>
+              </g>
+              <g stroke="#f2cf7a" stroke-width="3" stroke-linecap="round">
+                <path d="M186 186l22-6M232 187l20-5"/>
+              </g>
+              <path d="M168 194H288" stroke="#8a6d45" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <h3>{{how.s2_title}}</h3>
+            <p>{{how.s2_text}}</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <svg class="step-art" viewBox="0 0 300 210" role="img" aria-label="{{how.s3_aria}}" focusable="false">
+              <path d="M8 112 C80 100 200 118 292 104" stroke="#3a4048" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M22 18 L136 10 L142 92 L28 98 Z" fill="#ffb000"/>
+              <path d="M156 12 L282 22 L276 92 L160 88 Z" fill="#2e8b4a"/>
+              <path d="M26 126 L118 120 L124 198 L20 200 Z" fill="#2e8b4a"/>
+              <path d="M138 122 L280 118 L286 196 L146 202 Z" fill="#ffb000"/>
+              <g stroke="#000" stroke-opacity="0.16" stroke-width="2">
+                <path d="M40 30l4 60M60 28l4 62M80 27l4 62M100 25l4 62M120 24l4 62"/>
+                <path d="M160 140l130-4M160 158l130-4M160 176l130-4"/>
+              </g>
+              <g>
+                <path d="M82 70l-6 8-6-8z" fill="#141619"/>
+                <rect x="46" y="40" width="72" height="30" rx="4" fill="#141619"/>
+                <text x="82" y="61" class="svg-tag" text-anchor="middle">{{how.s3_tag1}}</text>
+              </g>
+              <g>
+                <path d="M214 172l-6 8-6-8z" fill="#141619"/>
+                <rect x="178" y="142" width="72" height="30" rx="4" fill="#141619"/>
+                <text x="214" y="163" class="svg-tag" text-anchor="middle">{{how.s3_tag2}}</text>
+              </g>
+            </svg>
+            <h3>{{how.s3_title}}</h3>
+            <p>{{how.s3_text}}</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3. Video -->
+    <section class="section" aria-labelledby="video-title">
+      <div class="wrap">
+        <div class="video-block">
+          <h2 id="video-title">{{video.heading}}</h2>
+          <div class="video" id="video">
+            <button type="button" class="video-poster" id="video-play" data-umami-event="landing-play-video" aria-label="{{video.play}}">
+              <img src="{{a}}assets/hero-poster.jpg" alt="" width="960" height="794" loading="lazy" decoding="async">
+              <span class="play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Results -->
+    <section class="section tone-2" aria-labelledby="results-title">
+      <div class="wrap">
+        <h2 id="results-title">{{results.heading}}</h2>
+        <dl class="stats">
+          <div><dt class="stat-num" data-count="6014" data-decimals="0">6,014</dt><dd>{{results.fields}}</dd></div>
+          <div><dt class="stat-num" data-count="9943" data-decimals="0">9,943</dt><dd>{{results.hectares}}</dd></div>
+          <div><dt class="stat-num" data-count="3.5" data-decimals="1">3.5</dt><dd>{{results.error}}</dd></div>
+        </dl>
+        <p class="context">{{results.context}}</p>
+
+        <div class="results-more">
+          <figure class="midpoint">
+            <figcaption class="midpoint-title">{{results.mid_title}}</figcaption>
+            <div class="mp-chart">
+              <span class="mp-label mp-label-radar"><i class="mp-dot mp-dot-radar"></i>{{results.mid_radar}}</span>
+              <span class="mp-axis" aria-hidden="true">
+                <i class="mp-tick mp-tick-radar"></i>
+                <i class="mp-gap"></i>
+                <i class="mp-tick mp-tick-report"></i>
+              </span>
+              <span class="mp-label mp-label-report">{{results.mid_report}}<i class="mp-dot mp-dot-report"></i></span>
+            </div>
+          </figure>
+
+          <div class="brazil">
+            <span class="brazil-num stat-num" data-count="2.5" data-decimals="1">2.5</span>
+            <p>{{results.brazil}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Who it's for -->
+    <section class="section" aria-labelledby="who-title">
+      <div class="wrap">
+        <h2 id="who-title">{{who.heading}}</h2>
+        <div class="who">
+          <div class="who-item">
+            <svg class="who-art" viewBox="0 0 300 180" role="img" aria-label="{{who.mills_aria}}" focusable="false">
+              <path d="M20 160 H280" stroke="#3a4048" stroke-width="3" stroke-linecap="round"/>
+              <path d="M30 160 V96 L66 76 V96 L102 76 V96 L138 76 V160 Z" fill="#2b3036" stroke="#9ba2ac" stroke-width="2" stroke-linejoin="round"/>
+              <rect x="112" y="40" width="16" height="44" fill="#2b3036" stroke="#9ba2ac" stroke-width="2"/>
+              <g fill="none" stroke="#7d8794" stroke-width="3" stroke-linecap="round">
+                <path d="M120 32c-6-5 4-9-2-14s4-9-2-13"/>
+              </g>
+              <rect x="44" y="116" width="16" height="16" rx="2" fill="#ffb000" fill-opacity="0.85"/>
+              <rect x="76" y="116" width="16" height="16" rx="2" fill="#ffb000" fill-opacity="0.85"/>
+              <rect x="64" y="140" width="22" height="20" fill="#141619"/>
+              <g fill="#ffb000">
+                <rect x="170" y="134" width="18" height="26" rx="2"/>
+                <rect x="196" y="118" width="18" height="42" rx="2"/>
+                <rect x="222" y="96" width="18" height="64" rx="2"/>
+                <rect x="248" y="70" width="18" height="90" rx="2"/>
+              </g>
+              <path d="M166 62 C196 60 226 52 268 34" fill="none" stroke="#5cc27e" stroke-width="2.5" stroke-dasharray="4 5" stroke-linecap="round"/>
+              <path d="M258 32 L270 33 L264 43" fill="none" stroke="#5cc27e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>{{who.mills_title}}</h3>
+            <p>{{who.mills_text}}</p>
+          </div>
+          <div class="who-item">
+            <svg class="who-art" viewBox="0 0 300 180" role="img" aria-label="{{who.growers_aria}}" focusable="false">
+              <path d="M20 160 H280" stroke="#3a4048" stroke-width="3" stroke-linecap="round"/>
+              <path d="M30 150 L110 140 L118 158 L26 160 Z" fill="#2e8b4a"/>
+              <path d="M182 140 L272 146 L276 160 L178 160 Z" fill="#ffb000"/>
+              <rect x="104" y="14" width="92" height="150" rx="14" fill="#1b1e22" stroke="#c4c9d0" stroke-width="2.5"/>
+              <rect x="114" y="30" width="72" height="116" rx="4" fill="#0d0f11"/>
+              <path d="M118 36 L150 34 L152 64 L120 66 Z" fill="#ffb000"/>
+              <path d="M156 34 L182 36 L180 62 L156 64 Z" fill="#2e8b4a"/>
+              <path d="M118 72 L148 70 L150 104 L118 104 Z" fill="#2e8b4a"/>
+              <path d="M154 70 L182 72 L182 106 L156 104 Z" fill="#ffb000"/>
+              <path d="M118 110 L150 110 L150 140 L118 140 Z" fill="#ffb000"/>
+              <path d="M156 112 L182 110 L182 140 L156 140 Z" fill="#2e8b4a"/>
+              <path d="M168 58 a13 13 0 0 1 13 13 c0 10 -13 23 -13 23 s-13 -13 -13 -23 a13 13 0 0 1 13 -13z" fill="#f3f4f6" stroke="#141619" stroke-width="2"/>
+              <circle cx="168" cy="71" r="5" fill="#141619"/>
+              <rect x="138" y="20" width="24" height="4" rx="2" fill="#3a4048"/>
+            </svg>
+            <h3>{{who.growers_title}}</h3>
+            <p>{{who.growers_text}}</p>
+          </div>
+        </div>
+        <p class="who-aside">{{who.aside}}</p>
+      </div>
+    </section>
+
+    <!-- 6. Who's behind it -->
+    <section class="section tone-warm" aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 id="about-title">{{about.heading}}</h2>
+        <figure class="about-photo">
+          <img src="{{a}}assets/photos/juan-canaveral.webp" width="1200" height="900" loading="lazy" decoding="async" alt="{{about.portrait_alt}}">
+        </figure>
+        <div class="about-text">
+          <p>{{about.p1}}</p>
+          <p>{{about.p2}}</p>
+          <p>{{about.p3}}</p>
+        </div>
+        <ul class="phrases">
+          <li>{{about.phrase1}}</li>
+          <li>{{about.phrase2}}</li>
+          <li>{{about.phrase3}}</li>
+        </ul>
+        <figure class="event">
+          <div class="event-photos">
+            <img src="{{a}}assets/photos/presentacion-zacatepec.webp" width="1380" height="1066" loading="lazy" decoding="async" alt="{{about.presenting_alt}}">
+            <img src="{{a}}assets/photos/auditorio-zacatepec.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="{{about.audience_alt}}">
+          </div>
+          <figcaption>{{about.caption}}</figcaption>
+        </figure>
+        <a class="btn btn-whatsapp" href="{{contact_url}}" target="_blank" rel="noopener" data-umami-event="landing-contact" data-umami-event-name="quien-esta-detras"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>{{closing.contact_button}}</a>
+      </div>
+    </section>
+
+    <!-- 7. Resources -->
+    <section class="section" aria-labelledby="res-title">
+      <div class="wrap">
+        <h2 id="res-title">{{resources.heading}}</h2>
+        <ul class="resources">
+          <li><a href="{{map_url}}" target="_blank" rel="noopener" data-umami-event="landing-resource" data-umami-event-name="mapa-morelos">{{resources.map}}</a></li>
+          <li><a href="https://www.youtube.com/watch?v={{video_id}}" target="_blank" rel="noopener" data-umami-event="landing-resource" data-umami-event-name="video">{{resources.video}}</a></li>
+          <li><a href="https://github.com/JuanToledo23/zafra-radar-app/blob/main/docs/demo/zafra-radar-demo.pdf" target="_blank" rel="noopener" data-umami-event="landing-resource" data-umami-event-name="presentacion">{{resources.deck}}</a></li>
+          <li><a href="https://github.com/JuanToledo23/zafra-radar-app" target="_blank" rel="noopener" data-umami-event="landing-resource" data-umami-event-name="repositorio">{{resources.repo}}</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. Closing -->
+    <section class="section tone-2" aria-labelledby="share-title">
+      <div class="wrap">
+        <h2 id="share-title">{{closing.heading}}</h2>
+        <div class="share-main">
+          <a class="btn btn-whatsapp btn-big" href="{{share_whatsapp}}" target="_blank" rel="noopener" data-umami-event="landing-share-whatsapp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>{{closing.whatsapp}}</a>
+          <button type="button" class="btn btn-ghost" id="share-native" hidden data-umami-event="landing-share-native"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>{{closing.native}}</button>
+        </div>
+        <ul class="share-more">
+          <li><a class="chip" href="{{share_facebook}}" target="_blank" rel="noopener" data-umami-event="landing-share-facebook"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</a></li>
+          <li><a class="chip" href="{{share_x}}" target="_blank" rel="noopener" data-umami-event="landing-share-x"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>X</a></li>
+          <li><a class="chip" href="{{share_linkedin}}" target="_blank" rel="noopener" data-umami-event="landing-share-linkedin"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+          <li><a class="chip" href="{{share_telegram}}" target="_blank" rel="noopener" data-umami-event="landing-share-telegram"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg>Telegram</a></li>
+          <li><button type="button" class="chip" id="copy-link" data-umami-event="landing-share-copy"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg><span class="copy-text">{{closing.copy}}</span></button></li>
+        </ul>
+        <p class="sr-only" id="copy-status" role="status" aria-live="polite"></p>
+
+        <div class="contact">
+          <p>{{closing.contact_line}}</p>
+          <a class="btn btn-whatsapp-outline" href="{{contact_url}}" target="_blank" rel="noopener" data-umami-event="landing-contact" data-umami-event-name="cierre"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>{{closing.contact_button}}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>{{footer}}</p>
+    </div>
+  </footer>
+
+  <a class="sticky-cta" id="sticky-cta" href="{{map_url}}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" data-umami-event="landing-open-map" data-umami-event-name="sticky">{{cta}}</a>
+</body>
+</html>

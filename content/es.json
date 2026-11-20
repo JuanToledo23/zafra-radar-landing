@@ -1,0 +1,108 @@
+{
+  "lang": "es",
+  "locale": "es_MX",
+  "map_url": "https://zafraradar.earth/?lang=es&utm_source=landing&utm_medium=referral",
+  "title": "Zafra Radar · Qué día se cortó cada parcela de caña",
+  "description": "Un mapa hecho en Morelos que usa un satélite de radar de la NASA para saber qué día se cortó cada parcela de caña.",
+  "og_alt": "Proyecto ganador. Un satélite de la NASA nos dice qué día se cortó cada parcela de caña. hola.zafraradar.earth/es",
+  "address": "hola.zafraradar.earth/es",
+  "lang_nav": "Idioma",
+  "plaque": {
+    "label": "Proyecto ganador",
+    "title": "Distinción Impacto Morelos",
+    "sub": "NASA Space Apps Challenge 2026 · Sede Tec de Zacatepec"
+  },
+  "h1": "Un satélite de la NASA nos dice qué día se cortó cada parcela de caña.",
+  "subtitle": "Hecho en Morelos. Probado también en Brasil.",
+  "cta": "Ver el mapa",
+  "hero_video": {
+    "title": "Así avanzó la zafra",
+    "aria": "La zafra 2025-26 en Morelos avanzando semana por semana en el mapa",
+    "pause": "Pausar la animación",
+    "resume": "Reanudar la animación",
+    "start": "Dic 2025",
+    "end": "May 2026",
+    "standing": "Caña en pie",
+    "harvested": "Ya cortada",
+    "undated": "Sin fecha"
+  },
+  "how": {
+    "heading": "Cómo funciona",
+    "s1_title": "El radar ve a través de las nubes y el humo.",
+    "s1_text": "El satélite NISAR, de la NASA y la agencia espacial de la India, pasa sobre los cañaverales cada 12 días. Funciona de día, de noche y con el cielo nublado.",
+    "s1_aria": "Dibujo: el satélite manda su señal a través de las nubes y el humo hasta el cañaveral, de día y de noche, cada 12 días.",
+    "s1_day": "día",
+    "s1_night": "noche",
+    "s1_every": "cada 12 días",
+    "s2_title": "Cuando se corta la caña, la señal cambia.",
+    "s2_text": "Una parcela con caña alta devuelve una señal distinta a una recién cortada. El sistema detecta ese cambio.",
+    "s2_aria": "Dibujo: la misma parcela antes, con caña alta, y después, ya cortada.",
+    "s2_before": "Antes",
+    "s2_after": "Después",
+    "s3_title": "El mapa marca la fecha de cada parcela.",
+    "s3_text": "Cada parcela aparece con el día aproximado en que se cortó, y puedes ver avanzar la zafra semana por semana.",
+    "s3_aria": "Dibujo: parcelas vistas desde arriba, cada una con su fecha de corte, como 12 feb y 3 mar.",
+    "s3_tag1": "12 feb",
+    "s3_tag2": "3 mar"
+  },
+  "video": {
+    "heading": "Míralo en 30 segundos",
+    "play": "Reproducir el video",
+    "iframe_title": "Zafra Radar en 30 segundos"
+  },
+  "results": {
+    "heading": "Resultados",
+    "fields": "parcelas de caña encontradas",
+    "hectares": "hectáreas mapeadas, casi la misma superficie que reporta el ingenio",
+    "error": "días de error típico en la fecha de corte",
+    "context": "Zafra 2025-26, zona del Ingenio Emiliano Zapata, Morelos.",
+    "mid_title": "Mitad de la zafra",
+    "mid_radar": "Radar: 7 de febrero",
+    "mid_report": "Reporte oficial: 14 de febrero",
+    "brazil": "días de error típico en Brasil, con el mismo código."
+  },
+  "who": {
+    "heading": "¿A quién le sirve?",
+    "mills_title": "Ingenios",
+    "mills_text": "Ver cómo avanza la zafra, semana por semana.",
+    "mills_aria": "Dibujo: un ingenio y barras que crecen semana por semana.",
+    "growers_title": "Productores y municipios",
+    "growers_text": "Consultar en un mapa público qué día se cortó cada parcela.",
+    "growers_aria": "Dibujo: un teléfono con un mapa de parcelas y un marcador.",
+    "aside": "Y cuesta poco: usa imágenes gratuitas de la NASA."
+  },
+  "about": {
+    "heading": "Quién está detrás",
+    "p1": "Soy Juan Toledo, desarrollador de software con más de 9 años de experiencia, de Morelos y egresado del Instituto Tecnológico de Zacatepec.",
+    "p2": "Zafra Radar lo hice yo solo, de principio a fin: el análisis de los datos del satélite, la aplicación web y su puesta en línea. La aplicación la construí en un fin de semana, trabajando con agentes de IA y dirigiendo y revisando cada paso, durante el NASA Space Apps Challenge 2026 en la sede de mi escuela, donde participaron 877 personas en 170 equipos.",
+    "p3": "Eso es lo que hago: tomar una idea o un problema y convertirlo en un producto que funciona. Si tienes un proyecto en mente, platiquemos.",
+    "phrase1": "De la idea al producto funcionando",
+    "phrase2": "Datos y mapas",
+    "phrase3": "Aplicaciones web completas",
+    "portrait_alt": "Juan Toledo junto a un cañaveral en Morelos.",
+    "presenting_alt": "Juan Toledo presenta Zafra Radar frente a la pantalla grande en la sede Zacatepec.",
+    "audience_alt": "El auditorio de la sede Zacatepec lleno de participantes.",
+    "caption": "Presentación en la sede Zacatepec, 15 de noviembre de 2026."
+  },
+  "resources": {
+    "heading": "Recursos",
+    "map": "Mapa de Morelos",
+    "video": "Video de 30 segundos",
+    "deck": "Presentación (en inglés)",
+    "repo": "Repositorio del proyecto"
+  },
+  "closing": {
+    "heading": "¿Te gustó? Ayúdame a compartirlo",
+    "whatsapp": "Compartir por WhatsApp",
+    "native": "Compartir",
+    "copy": "Copiar enlace",
+    "copied": "¡Copiado!",
+    "copied_status": "Enlace copiado.",
+    "copy_failed": "No se pudo copiar el enlace.",
+    "contact_line": "¿Quieres llevar Zafra Radar a tu zona o tienes otro proyecto de tecnología en mente? Platiquemos.",
+    "contact_button": "Escríbeme por WhatsApp"
+  },
+  "contact_message": "Hola Juan, vi Zafra Radar y me gustaría platicar.",
+  "share_text": "Mira esto: un mapa hecho en Morelos que usa un satélite de la NASA para saber qué día se cortó cada parcela de caña 🛰️🌱",
+  "footer": "Hecho por Juan Toledo. Proyecto independiente: no es un producto de la NASA ni cuenta con su respaldo. Datos de radar: misión NISAR (NASA e ISRO)."
+}

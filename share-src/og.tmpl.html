@@ -1,0 +1,17 @@
+<!doctype html><html lang="{{lang}}"><meta charset="utf-8"><link rel="stylesheet" href="../share.css">
+<style>
+  /* 1200x630 link preview. Everything that matters sits in the central 630x630 square
+     (x 285-915), since some apps crop the preview to a square. */
+  html, body { width: 1200px; height: 630px; }
+  .panel { left: 285px; width: 630px; top: 176px; bottom: 0; }
+  .plaque { left: 315px; top: 116px; gap: 14px; padding: 12px 20px 12px 16px; }
+  .plaque svg { width: 40px; height: 40px; }
+  .plaque .l { font-size: 14px; } .plaque .t { font-size: 25px; } .plaque .s { font-size: 15px; }
+  h1 { left: 315px; width: 570px; top: 262px; font-size: 52px; }
+  .url { left: 315px; bottom: 30px; font-size: 32px; }
+</style>
+<body><div class="map"></div><div class="panel"></div>
+  <div class="plaque"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 1.5h4l2.6 6.2h-4zM17.5 1.5h-4l-2.6 6.2h4z" fill="#141619"/><circle cx="12" cy="15" r="7" fill="#141619"/><circle cx="12" cy="15" r="4" fill="none" stroke="#ffb000" stroke-width="1.6"/></svg><div><span class="l">{{plaque.label}}</span><span class="t">{{plaque.title}}</span><span class="s">{{plaque.sub}}</span></div></div>
+  <h1>{{h1}}</h1>
+  <div class="url">{{address}}</div>
+</body></html>

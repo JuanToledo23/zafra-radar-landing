@@ -1,0 +1,16 @@
+<!doctype html><html lang="{{lang}}"><meta charset="utf-8"><link rel="stylesheet" href="../share.css">
+<style>
+  /* 1080x1920 story / status. Text stays between y 250 and y 1620. */
+  html, body { width: 1080px; height: 1920px; }
+  .panel { left: 0; right: 0; top: 640px; height: 1000px; }
+  .plaque { left: 70px; top: 560px; gap: 22px; padding: 22px 34px 22px 26px; border-radius: 14px; }
+  .plaque svg { width: 68px; height: 68px; }
+  .plaque .l { font-size: 24px; } .plaque .t { font-size: 44px; } .plaque .s { font-size: 27px; }
+  h1 { left: 70px; right: 70px; top: 820px; font-size: 104px; }
+  .url { left: 70px; top: 1500px; font-size: 62px; }
+</style>
+<body><div class="map"></div><div class="panel"></div>
+  <div class="plaque"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 1.5h4l2.6 6.2h-4zM17.5 1.5h-4l-2.6 6.2h4z" fill="#141619"/><circle cx="12" cy="15" r="7" fill="#141619"/><circle cx="12" cy="15" r="4" fill="none" stroke="#ffb000" stroke-width="1.6"/></svg><div><span class="l">{{plaque.label}}</span><span class="t">{{plaque.title}}</span><span class="s">{{plaque.sub}}</span></div></div>
+  <h1>{{h1}}</h1>
+  <div class="url">{{address}}</div>
+</body></html>
